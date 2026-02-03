@@ -51,6 +51,14 @@ Now that you have user inputs ready, you’ll move to handling peer-to-peer comm
   # Example
   def chat_task(ctx, pipe, n, group):  # function name is chat_task
   ```
+  ```python
+  def get_peer_node(username) #function name is get_peer_node
+  def join_group(node, group): #function name is join_group
+  def chat_task(ctx, pipe, n, group): #function name is chat_task
+  def get_channel(node, group): #function name is get)channel
+ 
+ ```
+  
   2. List all parameters and what you think they are. Put "UNSURE" if you don't have a guess.
   ```shell
   # Example
@@ -59,11 +67,20 @@ Now that you have user inputs ready, you’ll move to handling peer-to-peer comm
   n: This is the peer to peer node my chat app is connected as
   group: This is the peer chat group I wanted to join
   ```
+  
+  ```shell
+  username: I assume this is the username
+  
+  ```
   3. Note if the function **returns** anything. If it does, note what you believe it returns, and make a final note about what you believe the function may do.
   ```shell
   # Example
   The chat_task method does not return anything, it appears to be the send/recieve manager.
   ```
+  ```shell
+  n: is returned, and I think its a Peer node.
+  
+
 
 ## Combining the Functions to Create the Peer-to-Peer Chat
 In this part, you will combine all the functions from Part 1 and Part 2 to create a functioning peer-to-peer chat.
